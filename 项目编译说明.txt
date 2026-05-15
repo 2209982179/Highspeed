@@ -1,0 +1,72 @@
+﻿此说明为局域网环境（无联网环境）编译说明
+\\192.168.1.100\ShareFolder\开发软件\v4.5.2  复制到C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework
+
+======================================================================================================================================================== 
+
+后端编译：SourceCode\ASPECT_WEB\ASPECT_api
+1. 准备环境: VS 2022，.NET 6 SDK
+2. 将\\192.168.1.100\ShareFolder\开发软件\dotnet-sdk\NuGetFallbackFolder.7z 解压缩到 C:\Program Files\dotnet\sdk\NuGetFallbackFolder
+3. 将\\192.168.1.100\ShareFolder\开发软件\dotnet-sdk\packs.7z 解压缩到 C:\Program Files\dotnet\packs
+4. 将\\192.168.1.100\ShareFolder\开发环境联网依赖\adap_api\packages 复制到代码目录SourceCode\ADAP\adap_api\packages
+5. 编译整个解决方案
+（注：后端联网编译，将"00.solution.config\nuget.config"中<configuration>节点下所有内容清空保存后再重新编译）
+
+后端编译（JetBrains Rider）：SourceCode\ASPECT_WEB\ASPECT_api
+同上，将步骤4.中的packages 复制到C:\Users\[当前用户]\.nuget\packages
+
+前端编译：SourceCode\ASPECT_WEB\ASPECT_web
+1. 准备环境：VSCODE 1.85.0，nodejs 21.4.0，yarn 1.22.19
+2. 执行 yarn config set ignore-engines true (忽略node版本过高的问题)
+3. 将\\192.168.1.100\ShareFolder\开发环境联网依赖\adap_web\node_modules 复制到代码目录SourceCode\ADAP\adap_web\node_modules
+4. 运行: yarn serve
+   编译: yarn build
+5. 使用 Shift+Alt+F 格式化文档，第一次格式化时按照提示选择使用prettier方式
+   （vscode插件在\\192.168.1.100\ShareFolder\开发软件\vscode 1.85.x\中）
+   
+========================================================================================================================================================   
+   
+后端IIS发布流程：
+1. 确保环境安装了IIS及IIS管理服务
+2. 确保安装了IIS模块：ASP.NET Core Module v2，若找不到该模块则安装dotnet-hosting-6.0.36-win.exe后，再刷新IIS模块页面检查是否已经添加
+3. 创建IIS网站，名称：adap.api，物理路径：指向一个空文件夹，端口：5229，其他默认设置
+4. vs中配置api的IIS发布
+	1）右键adap.api项目，选择“发布...”，打开发布界面
+	2）“添加发布配置文件”
+	3）选择“Web 服务器(IIS)” -> 
+	
+	   "Web 部署" -> 
+	   
+	   服务器：127.0.0.1
+	   站点名称：adap.api
+	   用户名：windows登录账号
+	   密码：windows登录密码 ->
+	   
+	   完成
+	4）在发布界面点击发布，等待IIS发布完成
+5. 打开浏览器，输入：http://localhost:5229/swagger/index.html 验证是否正常访问
+	
+后端IIS发布包发布流程：
+1. 确保环境安装了IIS及IIS管理服务
+2. 确保安装了IIS模块：ASP.NET Core Module v2，若找不到该模块则安装dotnet-hosting-6.0.36-win.exe后，再刷新IIS模块页面检查是否已经添加
+3. 创建IIS网站，名称：adap.api，物理路径：指向一个空文件夹，端口：5229，其他默认设置
+4. vs中配置api的IIS发布
+	1）右键adap.api项目，选择“发布...”，打开发布界面
+	2）“添加发布配置文件”
+	3）选择“Web 服务器(IIS)” -> 
+	
+	   "Web Deploy 包" -> 
+	   
+	   包位置：IIS发布包的保存文件夹位置
+	   站点名称：adap.api ->
+	   
+	   完成
+	4）在发布界面点击发布，等待IIS发布包打包完成
+5. 使用"以管理员身份运行"打开cmd，并将当前目录转到IIS发布包保存文件夹，执行 "adap.api.deploy.cmd /Y" 发布站点
+6. 打开浏览器，输入：http://localhost:5229/swagger/index.html 验证是否正常访问
+	
+前端IIS发布流程：
+1. 确保环境安装了IIS及IIS管理服务
+2. 前端 .env.production 文件中，配置VUE_APP_BASE_API为api访问地址，例如：http://localhost:5229/
+3. 使用 yarn run build 命令编译发布版本，编译结果输出到dist目录
+4. 创建IIS网站，名称：adap.web，物理路径：指向dist文件夹，端口：8080，其他默认设置
+5. 打开浏览器，输入：http://localhost:8080，验证是否正常访问并登录
