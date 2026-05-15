@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RestorePackagesPath>../packages/</RestorePackagesPath>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="01.Models\Requirement\**" />
+	  <Compile Remove="01.Models\UnifiedDataBase\**" />
+	  <Compile Remove="03.Implement\Requirement\**" />
+	  <Compile Remove="03.Implement\UnifiedDataBase\**" />
+	  <Compile Remove="04.Extensions\Reliability_FMEA\**" />
+	  <Compile Remove="04.Extensions\Requirement\**" />
+	  <Compile Remove="04.Extensions\UnifiedDataBase\**" />
+	  <Compile Remove="05.Data\Requirement\**" />
+	  <Compile Remove="05.Data\UnifiedDataBase\**" />
+	  <EmbeddedResource Remove="01.Models\Requirement\**" />
+	  <EmbeddedResource Remove="01.Models\UnifiedDataBase\**" />
+	  <EmbeddedResource Remove="03.Implement\Requirement\**" />
+	  <EmbeddedResource Remove="03.Implement\UnifiedDataBase\**" />
+	  <EmbeddedResource Remove="04.Extensions\Reliability_FMEA\**" />
+	  <EmbeddedResource Remove="04.Extensions\Requirement\**" />
+	  <EmbeddedResource Remove="04.Extensions\UnifiedDataBase\**" />
+	  <EmbeddedResource Remove="05.Data\Requirement\**" />
+	  <EmbeddedResource Remove="05.Data\UnifiedDataBase\**" />
+	  <None Remove="01.Models\Requirement\**" />
+	  <None Remove="01.Models\UnifiedDataBase\**" />
+	  <None Remove="03.Implement\Requirement\**" />
+	  <None Remove="03.Implement\UnifiedDataBase\**" />
+	  <None Remove="04.Extensions\Reliability_FMEA\**" />
+	  <None Remove="04.Extensions\Requirement\**" />
+	  <None Remove="04.Extensions\UnifiedDataBase\**" />
+	  <None Remove="05.Data\Requirement\**" />
+	  <None Remove="05.Data\UnifiedDataBase\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Aspose.Words" Version="21.8.0" />
+		<PackageReference Include="LiveChartsCore" Version="2.0.0-rc3.3" />
+		<PackageReference Include="LiveChartsCore.SkiaSharpView" Version="2.0.0-rc3.3" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Numerics.NET" Version="9.1.2" />
+		<PackageReference Include="Svg" Version="3.4.7" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\adap.framework\highspeed.framework.csproj" />
+	</ItemGroup>
+
+</Project>

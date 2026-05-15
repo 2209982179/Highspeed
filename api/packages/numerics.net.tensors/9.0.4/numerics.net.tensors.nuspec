@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Numerics.NET.Tensors</id>
+    <version>9.0.4</version>
+    <authors>ExoAnalytics Inc.</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">License.md</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>icon.png</icon>
+    <readme>docs\README.md</readme>
+    <projectUrl>https://numerics.net/</projectUrl>
+    <iconUrl>https://numerics.net/images/ExtremeNugetLogo.png</iconUrl>
+    <description>Numerics.NET is a set of libraries for numerical computing and data analysis.
+
+This is the Tensors package that contains support for multi-dimensional arrays.
+
+Supports .NET 6.0-9.0+, .NET Framework 4.62+, .NET Standard 2.0 on Windows, Linux and Mac.</description>
+    <summary>Numerics.NET - math, statistics, and data analysis libraries for .NET.</summary>
+    <releaseNotes>New in this update: new tensor operators (Cbrt, RootN, Clamp, AddProduct, MultiplySum), performance optimizations.</releaseNotes>
+    <copyright>Copyright © 2004-2024, ExoAnalytics Inc. All rights reserved.</copyright>
+    <tags>math statistics probability machine learning ml numerics linear algebra matrix vector solve optimization curve fit model fft integration differentiation interpolation regression</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.2">
+        <dependency id="Numerics.NET.Core" version="9.0.4" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="Numerics.NET.Core" version="9.0.4" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0">
+        <dependency id="Numerics.NET.Core" version="9.0.4" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0">
+        <dependency id="Numerics.NET.Core" version="9.0.4" exclude="Build,Analyzers" />
+        <dependency id="System.Numerics.Tensors" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net9.0">
+        <dependency id="Numerics.NET.Core" version="9.0.4" exclude="Build,Analyzers" />
+        <dependency id="System.Numerics.Tensors" version="9.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Numerics.NET.Core" version="9.0.4" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

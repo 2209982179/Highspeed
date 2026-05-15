@@ -1,0 +1,142 @@
+#ribbonBar {
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to top, #F4F4F4 50%, #0A84C2 50%);
+    height: 90px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    padding-bottom: 10px;
+
+    .content {
+        width: calc(100vw - 40px);
+        height: 90px;
+        padding-left: 40px;
+        background-color: #F4F4F4;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    
+
+    .group {
+        padding: 0 8px;
+        background-color: #F4F4F4;
+        border-right: 1px solid #bfbfbf;
+
+
+        .buttons {
+            text-align: center;
+            max-height: 62px;
+            height: 62px;
+
+            .ribbon-dropdown {
+                margin: 0;
+                background: none;
+                border: none;
+                vertical-align: middle;
+                min-width: 70px;
+                padding: 0;
+                padding: 4px;
+                cursor: pointer;
+
+                span {
+                    display: inline-block;
+                }
+
+                i.icon {
+                    display: block;
+                    transition: color .15s linear;
+                    font-size: 32px;
+                    line-height: 32px;
+                    height: 32px;
+                    padding-bottom: 8px;
+                }
+
+                .icon-name {
+                    display: inline-block;
+                    font-size: 12px;
+                    line-height: 12px;
+                    height: 12px;
+                }
+            }
+
+            .ribbon-dropdown:hover {
+                background: #B8B8B8;
+            }
+
+            .ribbon-small-button {
+                margin: 0;
+                background: none;
+                border: none;
+                min-width: 70px;
+                padding: 0;
+                display: block;
+                padding: 5px;
+                cursor: pointer;
+
+                i {
+                    transition: color .15s linear;
+                    font-size: 16px;
+                    line-height: 20px;
+                    height: 20px;
+                    margin-right: 4px;
+                }
+
+                .icon-name {
+                    display: inline-block;
+                    font-size: 12px;
+                    line-height: 20px;
+                    height: 20px;
+                }
+            }
+
+            .ribbon-small-button:hover {
+                background: #B8B8B8;
+            }
+        }
+
+        .label {
+            // margin-top: 10px;
+            // padding-bottom: 4px;
+            text-align: center;
+            height: 26px;
+
+            span {
+                display: block;
+                margin: auto;
+                margin-top: 4px;
+                line-height: 16px;
+                height: 16px;
+                padding: 3px 20px;
+                border-radius: 13px;
+                background-color: #eaeaea;
+                width: fit-content;
+            }
+        }
+    }
+
+    .group.first {
+        margin-left: -40px;
+    }
+
+    .no_border {
+        border-right: none;
+    }
+    /* 特殊的页标题样式 */
+    .ribbonBar-tab-title-special {
+        color: orange;
+    }
+    /* 下拉菜单选中样式 */
+    .ribbonBar-down-menu-item-checked {
+        color: #409EFF;
+    }
+
+    .diagram-centent {
+        .small_button i {
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>FreeSql.Provider.SqlServer</id>
+    <version>3.2.698</version>
+    <title>FreeSql.Provider.SqlServer</title>
+    <authors>FreeSql,ncc,YeXiangQin</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>logo.png</icon>
+    <projectUrl>https://github.com/2881099/FreeSql</projectUrl>
+    <description>FreeSql 数据库实现，基于 SqlServer 2005+，并根据版本适配分页方法：row_number 或 offset fetch next</description>
+    <tags>FreeSql ORM SqlServer mssql</tags>
+    <repository type="git" url="https://github.com/2881099/FreeSql" commit="70036d4235ef8a7754f97821a60361b982b27ac6" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.0">
+        <dependency id="FreeSql" version="3.2.698" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="FreeSql" version="3.2.698" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.5.1">
+        <dependency id="FreeSql" version="3.2.698" exclude="Build,Analyzers" />
+        <dependency id="System.Data.SqlClient" version="4.8.5" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net5.0">
+        <dependency id="FreeSql" version="3.2.698" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Data.SqlClient" version="2.1.4" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0">
+        <dependency id="FreeSql" version="3.2.698" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Data.SqlClient" version="2.1.4" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="FreeSql" version="3.2.698" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Data.SqlClient" version="2.1.4" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.SqlServer.SqlManagementObjects</id>
+    <version>170.18.0</version>
+    <authors>Microsoft</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>nuspecicon.png</icon>
+    <projectUrl>https://docs.microsoft.com/sql/relational-databases/server-management-objects-smo/overview-smo</projectUrl>
+    <iconUrl>https://s.gravatar.com/avatar/6f39d8562df0a3509a8240fb281bc5bd?s=80</iconUrl>
+    <description>The SQL Server Management Objects (SMO) Framework is a set of objects designed for programmatic management of Microsoft SQL Server and Microsoft Azure SQL Database.</description>
+    <releaseNotes>See https://raw.githubusercontent.com/Microsoft/sqlmanagementobjects/main/CHANGELOG.md</releaseNotes>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>SQL SMO XPLAT</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.2">
+        <dependency id="Azure.Core" version="1.25.0" exclude="Build,Analyzers" />
+        <dependency id="Azure.Identity" version="1.7.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Data.SqlClient" version="[5.1.1, 6.0.0)" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Identity.Client" version="4.47.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.SqlServer.Assessment" version="1.1.9" exclude="Build,Analyzers" />
+        <dependency id="NewtonSoft.Json" version="13.0.1" exclude="Build,Analyzers" />
+        <dependency id="System.Buffers" version="4.5.1" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.DiagnosticSource" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Memory" version="4.5.4" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.CompilerServices.Unsafe" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.ValueTuple" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0">
+        <dependency id="Azure.Core" version="1.25.0" exclude="Build,Analyzers" />
+        <dependency id="Azure.Identity" version="1.7.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Data.SqlClient" version="[5.1.1, 6.0.0)" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Identity.Client" version="4.47.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.SqlServer.Assessment" version="1.1.9" exclude="Build,Analyzers" />
+        <dependency id="NewtonSoft.Json" version="13.0.1" exclude="Build,Analyzers" />
+        <dependency id="System.Buffers" version="4.5.1" exclude="Build,Analyzers" />
+        <dependency id="System.Data.OleDb" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.DiagnosticSource" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Management" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Memory" version="4.5.4" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.CompilerServices.Unsafe" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Security.Cryptography.ProtectedData" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Security.Permissions" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Security.Principal.Windows" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.ValueTuple" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Azure.Core" version="1.25.0" exclude="Build,Analyzers" />
+        <dependency id="Azure.Identity" version="1.7.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Data.SqlClient" version="[5.1.1, 6.0.0)" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Identity.Client" version="4.47.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.SqlServer.Assessment" version="1.1.9" exclude="Build,Analyzers" />
+        <dependency id="NewtonSoft.Json" version="13.0.1" exclude="Build,Analyzers" />
+        <dependency id="System.Buffers" version="4.5.1" exclude="Build,Analyzers" />
+        <dependency id="System.Data.OleDb" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.DiagnosticSource" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Management" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Memory" version="4.5.4" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.CompilerServices.Unsafe" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Security.Cryptography.ProtectedData" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Security.Permissions" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Security.Principal.Windows" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.ValueTuple" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Data" targetFramework=".NETFramework4.6.2" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

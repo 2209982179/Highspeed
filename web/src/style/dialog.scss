@@ -1,0 +1,234 @@
+.dialog-footer {
+  height: 32px;
+  line-height: 32px;
+  // padding-top: 12px;
+
+  .messageSpan {
+    margin-right: 8px;
+    width: calc(50% - 8px);
+    color: red;
+    float: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left;
+  }
+
+  .btnBox {
+    width: 50%;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+  }
+}
+
+.div-no-wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#dialog-new {
+  height: 100%;
+
+  input[aria-hidden='true'] {
+    display: none !important;
+  }
+
+  &.el-upload-dragger {
+    width: 460px;
+  }
+
+  ::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 8px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 5px;
+    background-color: skyblue;
+    background-image: -webkit-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.2) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.2) 75%,
+      transparent 75%,
+      transparent
+    );
+  }
+
+  ::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #ededed;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(95, 200, 241);
+    background-image: -webkit-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.2) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.2) 75%,
+      transparent 75%,
+      transparent
+    );
+  }
+
+  // Begin -- 设置表格Table控件样式
+
+  .el-table th.gutter {
+    width: 8px;
+  }
+  .el-table colgroup col[name='gutter'] {
+    width: 8px;
+  }
+  .el-table__body {
+    width: 100% !important;
+  }
+
+  .el-table thead {
+    color: #606266;
+  }
+
+  .el-table .el-table-column--selection .cell {
+    padding-left: 13px;
+    padding-right: 10px;
+    text-overflow: unset !important;
+  }
+
+  .el-row {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .el-col {
+    border-radius: 4px;
+  }
+
+  .el-form-item {
+    margin-bottom: 0px;
+  }
+
+  .el-collapse-item__wrap {
+    border-bottom: none;
+  }
+
+  tr:not(.el-table__row) > td {
+    padding: 0px 0;
+  }
+  // End -- 设置表格Table控件样式
+
+  .el-card__header {
+    color: #606266;
+    background: rgb(245, 247, 250);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 20px;
+
+    i {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  }
+
+  .el-card__header span {
+    font-size: 14px;
+  }
+
+  .selected-row {
+    background: #ecf5ff;
+  }
+
+  .el-tabs__nav-scroll .el-tabs__item {
+    color: #303133;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .DialogPopup {
+    position: absolute;
+    top: 10%;
+    margin: 0px !important;
+  }
+
+  /* tabs 标签页 */
+  .el-tabs--border-card {
+    border: 1px solid #ebeef5;
+  }
+  .el-dialog__header {
+    height: 100%;
+    line-height: 100%;
+    padding: 20px 20px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
+
+    .el-icon.el-icon-close {
+      width: 100%;
+      height: 100%;
+      position: unset;
+    }
+  }
+  .el-dialog__body {
+    padding: 12px 12px;
+  }
+
+  .el-dialog__footer .el-button {
+    margin-top: 0px;
+  }
+
+  .el-dialog__footer {
+    height: 100%;
+    padding: 15px 15px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
+  }
+
+  .dialog-footer {
+    padding-top: 0px !important;
+  }
+
+  .el-card {
+    height: 100%;
+
+    .el-card__body {
+      padding: 0px;
+      height: calc(100% - 40px);
+    }
+  }
+
+  .el-col {
+    text-align: center;
+  }
+
+  .fmmb-search-btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .el-tag {
+    margin: 0 2px;
+  }
+
+  .el-badge__content.is-fixed {
+    top: 9px;
+    right: 3px;
+  }
+
+  .el-tabs__item {
+    padding: 0 25px;
+    height: 45px;
+    line-height: 45px;
+  }
+}

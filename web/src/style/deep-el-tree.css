@@ -1,0 +1,12 @@
+/* tree文字样式 */
+.custom-tree-node {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'Tahoma';
+    i {
+        margin-right: 4px;
+    }
+}

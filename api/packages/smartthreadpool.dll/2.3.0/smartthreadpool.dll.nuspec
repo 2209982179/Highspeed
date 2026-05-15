@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SmartThreadPool.dll</id>
+    <version>2.3.0</version>
+    <authors>Ami Bar</authors>
+    <license type="expression">MS-PL</license>
+    <licenseUrl>https://licenses.nuget.org/MS-PL</licenseUrl>
+    <projectUrl>https://github.com/amibar/SmartThreadPool</projectUrl>
+    <description>Smart Thread Pool, implemented in .NET</description>
+    <releaseNotes>Added .net core 3.1 and 5.0 support</releaseNotes>
+    <copyright>Ami Bar</copyright>
+    <tags>SmartThreadPool Thread Pool .NET</tags>
+    <repository url="https://github.com/amibar/SmartThreadPool" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.0" />
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework=".NETFramework4.6" />
+      <group targetFramework=".NETCoreApp3.0" />
+      <group targetFramework=".NETCoreApp3.1" />
+      <group targetFramework="net5.0" />
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Web" targetFramework=".NETFramework4.0, .NETFramework4.5, .NETFramework4.6" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

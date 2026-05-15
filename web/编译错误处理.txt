@@ -1,0 +1,11 @@
+1. yarn install 报错：error @achrinza/node-ipc@9.2.2: The engine "node" is incompatible with this module. Expected version "8 || 10 || 12 || 14 || 16 || 17". Got "21.3.0"
+原因：node版本过高
+解决办法：忽略版本检查。执行 yarn config set ignore-engines true 后再次执行 yarn install
+2. The "from" argument must be of type string. Received undefined
+原因：使用 wokrer-loader 加载 web woker 时，使用 npm run build 有很大机率会打包失败，报错如上。thread-loader 与 worker-loader 有冲突。
+解决办法：vue.config.js 配置 parallel: false 
+module.exports = {
+  ...
+  parallel: false,
+  ...
+}

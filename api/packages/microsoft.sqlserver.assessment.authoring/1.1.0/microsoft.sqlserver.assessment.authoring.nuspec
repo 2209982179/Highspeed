@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.SqlServer.Assessment.Authoring</id>
+    <version>1.1.0</version>
+    <authors>Microsoft</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.md</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>nugetlogo.png</icon>
+    <projectUrl>https://github.com/microsoft/sql-server-samples/tree/master/samples/manage/sql-assessment-api</projectUrl>
+    <description>The SQL Server Assessment API Authoring package provides a public interface that helps extend the default mechanisms for evaluation of the SQL Server configuration for best practices using the SQL Server Assessment API.</description>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>SQL Assessment</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5.1" />
+      <group targetFramework=".NETFramework4.6.2" />
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>

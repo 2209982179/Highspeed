@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Aspose.Words</id>
+    <version>21.8.0</version>
+    <title>Aspose.Words for .NET</title>
+    <authors>Aspose</authors>
+    <owners>Aspose</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">License\Aspose_End-User-License-Agreement.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>Images\aspose_words-for-net.png</icon>
+    <projectUrl>https://products.aspose.com/words/net</projectUrl>
+    <description>Aspose.Words for .NET is a Document Processing library that allows developers to work with documents in many popular formats without needing Office Automation. Users can perform a wide variety of document tasks, ranging from simply converting documents from one supported format to another and modifying these documents during the conversion process, to business-oriented tasks, such as creating structured and visually appealing documents or automating reporting with complex templates and data-bound fields.</description>
+    <summary>Aspose.Words for .NET is a class library for .NET, .NETStandard and Xamarin that enables you to perform a wide range of document processing tasks directly within your applications.</summary>
+    <releaseNotes>https://docs.aspose.com/words/net/aspose-words-for-net-21-8-release-notes</releaseNotes>
+    <copyright>© Aspose 2001-2021. All Rights Reserved.</copyright>
+    <tags>.NET .net-core .net-standard .netcore .netstandard .netstandard2.0 API ASP.NET vbscript aspnetcore Aspose Aspose.Total Aspose.Words Assembly Azure base64 bmp bmp-to-pdf C# chm component Conholdate Conholdate.Total convert converter core cross-platform csharp digital-publishing doc doc-to-bmp doc-to-emf doc-to-html doc-to-jpeg doc-to-pdf doc-to-png doc-to-postscript doc-to-ps docm document docx docx-to-epub docx-to-gif docx-to-html docx-to-markdown docx-to-md docx-to-mhtml docx-to-pcl docx-to-pdf dot dotm dotnet-core dotnet-standard dotnetcore dotnetstandard dotx emf emf-to-pdf epub Fast flatopc Framework gif gif-to-pdf html htmlfixed jpeg jpeg-to-pdf Library Linux macOS mhtml Microsoft mobi mono mvc net-core net-standard netcore netstandard netstandard2.0 odt Office opendocument openoffice openxps ott pcl pcl6 PCLXL pdf pdf-to-bmp pdf-to-jpeg pdf-to-png pdf1.5 pdf17 png png-to-pdf postscript print ps render rtf rtf1.9 Standard svg text tiff tiff-to-pdf txt Visual-Studio VisualStudio Windows-Forms winforms wmf-to-pdf word-to-bmp word-to-emf word-to-epub word-to-gif word-to-html word-to-jpeg word-to-markdown word-to-md word-to-mhtml word-to-pcl word-to-pdf word-to-png word-to-postscript word-to-ps wordml xamarin-android xamarin-ios xamarin-mac xamlfixed xamlflow xps md markdown XamlFlowPack Windows Mobile Android iOS Amazon-Web-Services AWS .netcore2.0 .netcore2.1 .netcore3.0 .net5.0 MonoDevelop LINQ Rendering OLE VBA cloud</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Text.Encoding.CodePages" version="4.5.0" />
+        <dependency id="System.Reflection.Emit" version="4.3.0" />
+        <dependency id="System.Reflection.Emit.ILGeneration" version="4.3.0" />
+        <dependency id="Microsoft.Win32.Registry" version="4.7.0" />
+        <dependency id="SkiaSharp" version="2.80.1" />
+      </group>
+      <group targetFramework=".NETFramework2.0" />
+      <group targetFramework=".NETFramework3.5-Client" />
+      <group targetFramework=".NETFramework4.0" />
+      <group targetFramework=".NETFramework4.0-Client" />
+      <group targetFramework=".NETFramework4.6.1" />
+    </dependencies>
+  </metadata>
+</package>

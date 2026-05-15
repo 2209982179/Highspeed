@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.SqlServer.Assessment</id>
+    <version>1.1.9</version>
+    <authors>Microsoft</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.md</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>nugetlogo.png</icon>
+    <projectUrl>https://github.com/microsoft/sql-server-samples/tree/master/samples/manage/sql-assessment-api</projectUrl>
+    <description>The SQL Assessment API provides a mechanism to evaluate the configuration of the SQL server for best practices. The API is delivered with a ruleset containing best practice rules suggested by the SQL Server team.</description>
+    <releaseNotes>See https://github.com/microsoft/sql-server-samples/blob/master/samples/manage/sql-assessment-api/release-notes.md</releaseNotes>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>SQL Assessment</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5.1">
+        <dependency id="Microsoft.SqlServer.Assessment.Authoring" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="10.0.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.6.2">
+        <dependency id="Microsoft.SqlServer.Assessment.Authoring" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="10.0.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.SqlServer.Assessment.Authoring" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="10.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,24 @@
+.table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  .table {
+    height: 100%;
+    flex: 1;
+    position: relative;
+    ::v-deep .el-table {
+      position: absolute;
+    }
+  }
+}
+
+.el-table th.el-table__cell {
+  -webkit-user-select: text !important;
+  user-select: text !important;
+}
+.el-table td.el-table__cell {
+  -webkit-user-select: text !important;
+  user-select: text !important;
+}

@@ -1,0 +1,136 @@
+.box {
+    width: 100%;
+    height: 100%;
+
+    .graphbox {
+        width: 100%;
+        height: 100%;
+        align-items: left;
+        /* 垂直居中 */
+        overflow: hidden;
+        flex: 1;
+
+        .graphContainer {
+            width: 100% !important;
+            height: 100% !important;
+            line-height: 100%;
+            overflow: auto;
+            background-color: #fff !important;
+        }
+
+        .mxPopupMenuItem img {
+            background-image: url(../../../assets/images/resize.gif);
+            width: 10px;
+            height: 10px;
+        }
+
+        .graphContainer-background {
+            background-image: url("../../../assets/grid.gif");
+        }
+    }
+
+    .show-map {
+        width: 160px;
+        height: 120px;
+        top: 0;
+        right: 40px;
+        z-index: 999;
+        position: absolute;
+        overflow: hidden;
+        border: 3px solid #ededed;
+        box-shadow: 9px 9px 12px -4px #cdc7c7;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    .show-diagram-detail{
+        padding: 5px;
+        width: auto;
+        height: 120px;
+        top: 0;
+        left: 10px;
+        z-index: 999;
+        position: absolute;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        border: 3px solid #ededed;
+        box-shadow: 9px 9px 12px -4px #cdc7c7;
+        background: rgba(255, 255, 255, 0.5);
+        .title{
+            margin-right: 7px;
+            font-weight: bold;
+        }
+        span{
+            font-size: 14px;
+        }
+    }
+}
+
+table.mxPopupMenu {
+    background: #fff;
+    cursor: pointer;
+    border: 1px solid #ededed;
+}
+
+.mxPopupMenuItem img {
+    background-image: url(../../../assets/images/resize.gif);
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+}
+
+div.mxPopupMenu {
+    position: absolute;
+}
+
+.mxPopupMenuItemHover {
+    background: #515151 !important;
+    color: #fff;
+    padding: 5px;
+}
+
+.mxPopupMenuItem {
+    padding-right: 0 !important;
+}
+
+.shapgroud {
+    .el-collapse-item__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    svg g path {
+        fill: transparent;
+    }
+
+    .stencil-node {
+        width: 20%;
+    }
+
+    svg g path {
+        stroke: #515151;
+        -webkit-text-fill-color: #515151;
+    }
+}
+
+.flow {
+    stroke-dasharray: 8;
+    animation: dash 0.5s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: -16;
+    }
+}
+
+.group-item {
+    cursor: pointer;
+    height: 40px;
+    margin: 5px 0;
+    line-height: 40px;
+    width: 80%;
+    display: inline-block;
+    border: 1px solid #eeee;
+}

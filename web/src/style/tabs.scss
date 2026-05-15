@@ -1,0 +1,15 @@
+.container-control-main{
+    .el-tabs__nav-next, .el-tabs__nav-prev{
+        background-color: #fff;
+        z-index: 999;
+    }
+    .el-tabs__nav-scroll .el-tabs__item{
+        background-color: #f4f4f4;
+    }
+    .el-tabs__item.is-active{
+        background-color: #fff;
+    }
+    .el-badge__content.is-fixed{
+        z-index: 999;
+    }
+}

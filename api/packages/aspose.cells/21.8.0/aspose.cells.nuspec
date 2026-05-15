@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Aspose.Cells</id>
+    <version>21.8.0</version>
+    <title>Aspose.Cells for .NET</title>
+    <authors>Aspose</authors>
+    <owners>Aspose</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://about.aspose.com/legal/eula</licenseUrl>
+    <projectUrl>https://products.aspose.com/cells/net</projectUrl>
+    <iconUrl>https://www.aspose.cloud/templates/aspose/App_Themes/V3/images/cells/272x272/aspose_cells-for-net.png</iconUrl>
+    <description>A powerful and fast library written in C# for manipulating and converting Excel(XLS, XLSX,XLSB), ODS, CSV and HTML files.</description>
+    <releaseNotes>https://docs.aspose.com/cells/net/aspose-cells-for-net-21-8-release-notes/</releaseNotes>
+    <copyright>© Aspose 2002-2021. All Rights Reserved.</copyright>
+    <tags>Excel XLS XLSX XLSB CSV to PDF JPG PNG HTML ODS Numbers XLSM OOXML Spreadsheet Markdown XPS DOCX PPTX MHTML SVG TIFF</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework2.0" />
+      <group targetFramework=".NETFramework3.5" />
+      <group targetFramework=".NETFramework4.0" />
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Text.Encoding.CodePages" version="4.7.0" exclude="Build,Analyzers" />
+        <dependency id="System.Drawing.Common" version="4.7.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework5.0">
+        <dependency id="System.Text.Encoding.CodePages" version="4.7.0" exclude="Build,Analyzers" />
+        <dependency id="System.Drawing.Common" version="4.7.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="MonoAndroid4.4" />
+      <group targetFramework="Xamarin.iOS1.0" />
+    </dependencies>
+  </metadata>
+</package>

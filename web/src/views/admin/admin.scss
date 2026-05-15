@@ -1,0 +1,63 @@
+#app .home-container {
+    background: #fff;
+    // height: 100vh;
+    z-index: 9999;
+    padding: 50px;
+  }
+  .home-bader {
+    padding: 50px;
+    border: 1px solid #ccc;
+  }
+  .home-bader-tools {
+    text-align: right;
+    i {
+      font-size: 20px;
+    }
+  }
+  .home-inder {
+    margin-top: 20px;
+    overflow: hidden;
+    .home-left {
+      float: left;
+    }
+    .home-right {
+      float: right;
+    }
+  }
+  .home-work {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    .work {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      height: 200px;
+      border-radius: 3px;
+    }
+    .work1 {
+      background: #409EFF;
+    }
+    .work2 {
+      background: #409EFF;
+    }
+    .work3 {
+      background: #409EFF;
+    }
+    .work4 {
+      background: #409EFF;
+    }
+    .work-mu {
+      background: #00ff88;
+    }
+  }
+  .el-header {
+    // background-color: #0A84C2;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    height: 45px!important;
+  }
+  ::v-deep .el-table .el-table__cell {
+    padding: 8px 0!important;
+  }

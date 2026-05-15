@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "highspeed.api", "adap.api\highspeed.api.csproj", "{2661BC35-ED91-48A8-B0BA-9C00CE89287D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00.solution.config", "00.solution.config", "{F65F3F74-BE29-4610-B125-810991140931}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.service", "01.service", "{07CB9157-13EF-48F3-A036-6BD821BD99C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.RefLibs", "02.RefLibs", "{AE7CFCD9-8088-4505-8F09-88DDCDA98EEB}"
+	ProjectSection(SolutionItems) = preProject
+		RefLibs\Aspose.Cells.dll = RefLibs\Aspose.Cells.dll
+		RefLibs\Aspose.Words.dll = RefLibs\Aspose.Words.dll
+		RefLibs\Aspose.Words.Pdf2Word.dll = RefLibs\Aspose.Words.Pdf2Word.dll
+		RefLibs\log4net.dll = RefLibs\log4net.dll
+		RefLibs\MySql.Data.dll = RefLibs\MySql.Data.dll
+		RefLibs\Newtonsoft.Json.dll = RefLibs\Newtonsoft.Json.dll
+		RefLibs\Oracle.ManagedDataAccess.dll = RefLibs\Oracle.ManagedDataAccess.dll
+		RefLibs\Svg.dll = RefLibs\Svg.dll
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "highspeed.business", "adap.reliabilitydata\highspeed.business.csproj", "{C58262BB-05EC-4BC1-971E-79280FF58CED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "highspeed.framework", "adap.framework\highspeed.framework.csproj", "{86577F3E-A1A0-4024-BEE9-54F6A963DB09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2661BC35-ED91-48A8-B0BA-9C00CE89287D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2661BC35-ED91-48A8-B0BA-9C00CE89287D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2661BC35-ED91-48A8-B0BA-9C00CE89287D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2661BC35-ED91-48A8-B0BA-9C00CE89287D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C58262BB-05EC-4BC1-971E-79280FF58CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C58262BB-05EC-4BC1-971E-79280FF58CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C58262BB-05EC-4BC1-971E-79280FF58CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C58262BB-05EC-4BC1-971E-79280FF58CED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86577F3E-A1A0-4024-BEE9-54F6A963DB09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86577F3E-A1A0-4024-BEE9-54F6A963DB09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86577F3E-A1A0-4024-BEE9-54F6A963DB09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86577F3E-A1A0-4024-BEE9-54F6A963DB09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2661BC35-ED91-48A8-B0BA-9C00CE89287D} = {07CB9157-13EF-48F3-A036-6BD821BD99C7}
+		{C58262BB-05EC-4BC1-971E-79280FF58CED} = {07CB9157-13EF-48F3-A036-6BD821BD99C7}
+		{86577F3E-A1A0-4024-BEE9-54F6A963DB09} = {07CB9157-13EF-48F3-A036-6BD821BD99C7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {649763E2-73EE-4FCE-A5BA-FB581B64EA02}
+	EndGlobalSection
+EndGlobal

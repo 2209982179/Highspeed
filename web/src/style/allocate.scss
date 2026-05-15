@@ -1,0 +1,37 @@
+
+.allion{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .all-top {
+    border: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+  .custom-tree {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  .custom-tree .el-input-group {
+    width: 300px;
+  }
+  .custom-tree .el-input-group .el-input__inner {
+    height: 24px !important;
+    line-height: 24px;
+  }
+  .all-index-top {
+    padding: 10px;
+    display: flex;
+    background-color: #ccc;
+  }
+  .all-index-left{
+   width: 50%;
+   padding-left: 20px;
+  }
+  .all-index-right{
+   width: 50%;
+   padding-left: 110px;
+  }

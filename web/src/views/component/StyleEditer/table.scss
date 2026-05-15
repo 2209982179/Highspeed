@@ -1,0 +1,103 @@
+table {
+    table-layout: fixed;
+    white-space: nowrap;
+    color: black;
+    border: 0;
+    width: 100%;
+
+    thead {
+        font-size: 14px;
+
+        tr {
+            background: #e5e5e5;
+            border-bottom: 0;
+            text-align: left;
+            width: 50%;
+
+            th {
+                border-bottom: 0;
+                text-align: left;
+                padding: 0 4px;
+            }
+
+            :first-child {
+                border-left: none;
+            }
+
+            :last-child {
+                border-right: none;
+            }
+        }
+    }
+
+    tbody {
+        font-size: 12px;
+
+        td {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width: 50%;
+            width: 50%;
+            border: 0;
+            margin: 0;
+            border-bottom: 1px solid #dadce0;
+            padding: 0 10px;
+            text-align: left;
+            user-select: text;
+        }
+
+        td.group1 {
+            font-weight: bold;
+            height: 32px;
+            background-color: #cfcfcf;
+            padding: 0 10px;
+            cursor: pointer;
+        }
+
+        td.group2 {
+            font-weight: bold;
+            height: 32px;
+            background-color: #cfcfcf;
+            padding: 0 25px;
+            cursor: pointer;
+        }
+
+        td.value {
+            border-left: 1px solid #dadce0;
+
+            .readonly {
+                background-color: #efefef;
+                min-height: 32px;
+                line-height: 32px;
+                margin: 0 -10px;
+            }
+
+            input {
+                padding: 0;
+                height: 24px;
+                line-height: 24px;
+                border: 0;
+            }
+
+            .el-input__icon {
+                line-height: 24px;
+            }
+        }
+
+        td.table {
+            padding: 0;
+        }
+
+        td.button {
+            padding: 10px;
+        }
+    }
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
